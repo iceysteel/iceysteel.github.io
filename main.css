@@ -6,17 +6,19 @@ body{
 
 #container{
     max-width: 60%;
-    min-width: 700px; 
+    /*min-width: 700px; */
     margin: auto;
     background-color: #ecf0f1;
     
     padding-right: 3em;
     padding-left: 3em;
+    
+    padding-bottom: 3em;
 }
 
 #title{
     padding: .5em .5em 0 .5em;
-    font-size: 4em;
+    font-size: 3em;
     display: inline-block;
 }
 
@@ -25,15 +27,27 @@ span{
 }
 
 #subtitle{
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
-    
+    text-align: center;
 }
 
 #titlepic{
     padding: 1em;
     text-align: center;
-    display: inline-block;
+    display: block;
+}
+
+#projects{
+    padding: .5em;
+    font-size: 2em;
+    border: #bdc3c7 solid 2px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+#projectlist{
+    list-style: none;
 }
 
 .quicklinks{
@@ -51,6 +65,12 @@ span{
 
 .quicklinks:hover{
     background-color: #7f8c8d;
+    color: white;
+    border: none;
+}
+
+.quicklinks:hover a{
+    color: white;
 }
 
 a{
@@ -59,7 +79,26 @@ a{
     color: #27ae60;
 }
 
+a:hover{
+    color: white;
+}
+
 a:visited {
     text-decoration: none;
     text-decoration-color: #e74c3c;
+}
+
+@media only screen 
+    and (min-width: 100px)
+    and (max-width: 736px) { 
+      
+        .quicklinks{
+            display: block;
+            margin-bottom: .5em;
+            margin-right: auto;
+            margin-left: auto;
+            width: 90%;
+            padding: 5%
+        }
+
 }
