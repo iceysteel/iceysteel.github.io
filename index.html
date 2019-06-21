@@ -2,7 +2,7 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     </head>
     
     
@@ -10,42 +10,90 @@
     <body>
                 
         <div id='container'>
-        
-            <div id='title'>Hello!<br>I'm <span>Zain Munad</span>. </div>
             
-            <div id='titlepic'><img height='200px' src="profile.png"/></div>
-            <div id='subtitle'><p>I like to code things that make people smile <span>:)</span></p></div>
+            <div id="title-container">
             
-            
-            
-            <ul>
-                
-                <li class='quicklinks'>
-                <a href="https://github.com/iceysteel">Github</a>
-                </li>
-                
-                <li class='quicklinks'>
-                <a href="https://www.linkedin.com/in/zain-munad-49b99ba0">LinkedIn</a>
-                </li>
-                
-                <li class='quicklinks'>
-                <a href="https://docs.google.com/document/d/1u9-26862XgNhvXUPYfjQRA54votxszJCyTiXpLFuZTY/edit?usp=sharing">Resume</a>
-                </li>
-                
-            </ul>
-            
-            
-            <div id='projects'>
-            Projects
+                <div id='title'>Hello!<br>I'm <span>Zain Munad</span>. </div>
+
+                <div id='titlepic'><img height='200px' src="profile.png"/></div>
+                <div id='subtitle'><p>I like to code things that make people smile <span>:)</span></p></div>
+
             </div>
             
-            <ul id='projectlist'>
-            <li>This area is currently being updated :( </li>
-            <li></li>
-            <li></li>
-            </ul>
+            
+            <div id="content-container">
+                <ul id="quicklinks-container">
+                    
+                    <a href="https://github.com/iceysteel">
+                        <li class='quicklinks'>
+                        Github
+                        </li>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/zain-munad-49b99ba0">
+                        <li class='quicklinks'>
+                        LinkedIn
+                        </li>
+                    </a>
+
+                    <a href="https://docs.google.com/document/d/1u9-26862XgNhvXUPYfjQRA54votxszJCyTiXpLFuZTY/edit?usp=sharing">
+                        <li class='quicklinks'>
+                        Resume
+                        </li>
+                    </a>
+
+                </ul>
 
 
+                <div id='projects'>
+                Projects
+                </div>
+
+                <ul id='projectlist'>
+                    <li>
+                        <div class="project-image">
+                        </div>
+                        <div class="project-description">
+                            <h2>Torrent Chan</h2>
+                            <h3><a href="https://github.com/iceysteel/TorrentChan/">Github</a></h3>
+                            <h4>Technologies used: <span>Webtorrent.js, Javascript, Python, Flask </span> </h4>
+                            <p>I created TorrentChan to solve a common problem with hosting imageboards and content based websites in general. Once there are enough users on such a website, data transfer can start costing a prohibative amount due to the transfer of images and videos. Each post and it's content on TorrentChan is turned into a torrent on the frontend and a magnet link of the torrent is sent to the server to be stored. This means all the data the server is transferring are the magnet links, eliminating the data transfer problem. This system is made possible using the Webtorrent library for the frontend. It allows clients to seed the post torrents to each other, decentralizing the hosting of the content.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        
+                        <div class="project-description">
+                            <h2>Alert Button</h2>
+                            <h3><a href="https://github.com/iceysteel/pbutton">Github</a></h3>
+                            <h4>Technologies used: <span>React Native, Javascript, Serverless </span> </h4>
+                            <p>Built at AngelHack Silicon Valley 2018 in response to tragic active shooter events, this app allows students to report the location of an active shooter to alert either all their contacts, their parents or their friends. I initially chose the React Native platform because I had heard how easy it made building cross platform apps, but quickly discovered just how rapid it made mobile development. I was able to do the design, backend serverless code and React Native all in the space of a few hours, even though it was my first time using React Native!
+                            </p>
+                        </div>
+                        <div class="project-image">
+                            <img src="alertButton.jpg">
+                        </div>
+                    </li>
+
+                    <li>
+
+                        <div class="project-description">
+                            <h2>Clevrly Food Finder</h2>
+                            <h3><a href="https://github.com/iceysteel/geolocation">Github</a></h3>
+                            <h4>Technologies used:<span> APIs, Javascript, jQuery</span></h4>
+                            <p>Back in 2015 while using Instagram, I found myself thinking, "Why don't we put all these pictures of food people are posting to good use?". And so I did. I used a Foursquare's API to get a list of nearby resturants, which I plugged into Instagram's API to get a list of photos at that location tagged with #food. I displayed all that on a Google map
+                            </p>
+                        </div>
+                        <div class="project-image">
+                            <img src="clevrlyfood.png"/>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+<!--end content container-->
+            </div>
             
         </div>
     </body>
